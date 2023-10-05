@@ -1,0 +1,25 @@
+spring.jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:  jdbc:mysql://127.0.0.1:3306/FFSNS
+    username: root
+    password: dkdldb12
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+
+
+jwt:
+  secret-key: taedong_is.sns-application-2022-secret-key
+  token:
+    expired-time-ms: 259200000
